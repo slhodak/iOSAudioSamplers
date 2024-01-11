@@ -18,6 +18,15 @@ class AudioKitAppleSamplerExample {
         loadSoundFont()
     }
     
+    func setupAudioEngine() {
+        do {
+            engine.output = instrument
+            try engine.start()
+        } catch {
+            Log("AudioKitAppleSampler: Could not start audio engine")
+        }
+    }
+    
     func loadSoundFont() {
         do {
             if let fileURL = Bundle.main.url(forResource: "Keyboards", withExtension: "sf2") {
@@ -27,15 +36,6 @@ class AudioKitAppleSamplerExample {
             }
         } catch {
             Log("AudioKitAppleSampler: Could not load instrument")
-        }
-    }
-    
-    func setupAudioEngine() {
-        do {
-            engine.output = instrument
-            try engine.start()
-        } catch {
-            Log("AudioKitAppleSampler: Could not start audio engine")
         }
     }
     
