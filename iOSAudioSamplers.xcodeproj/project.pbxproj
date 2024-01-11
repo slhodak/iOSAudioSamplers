@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		1729AF002B507F2C0057F2DA /* DunneAudioKit in Frameworks */ = {isa = PBXBuildFile; productRef = 1729AEFF2B507F2C0057F2DA /* DunneAudioKit */; };
+		1729AF022B50820A0057F2DA /* AudioKitDunneSamplerExample.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1729AF012B50820A0057F2DA /* AudioKitDunneSamplerExample.swift */; };
 		17B3FA4E2B50628000DD716B /* iOSAudioSamplersApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 17B3FA4D2B50628000DD716B /* iOSAudioSamplersApp.swift */; };
 		17B3FA502B50628000DD716B /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 17B3FA4F2B50628000DD716B /* ContentView.swift */; };
 		17B3FA522B50628200DD716B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 17B3FA512B50628200DD716B /* Assets.xcassets */; };
@@ -18,6 +20,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		1729AF012B50820A0057F2DA /* AudioKitDunneSamplerExample.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AudioKitDunneSamplerExample.swift; sourceTree = "<group>"; };
 		17B3FA4A2B50628000DD716B /* iOSAudioSamplers.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = iOSAudioSamplers.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		17B3FA4D2B50628000DD716B /* iOSAudioSamplersApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = iOSAudioSamplersApp.swift; sourceTree = "<group>"; };
 		17B3FA4F2B50628000DD716B /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -34,6 +37,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				17B3FA5F2B50630E00DD716B /* AudioKit in Frameworks */,
+				1729AF002B507F2C0057F2DA /* DunneAudioKit in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -63,6 +67,7 @@
 				17B3FA4D2B50628000DD716B /* iOSAudioSamplersApp.swift */,
 				17B3FA4F2B50628000DD716B /* ContentView.swift */,
 				17B3FA5B2B5062B000DD716B /* AudioKitAppleSamplerExample.swift */,
+				1729AF012B50820A0057F2DA /* AudioKitDunneSamplerExample.swift */,
 				17B3FA632B506DC800DD716B /* AVAudioUnitSamplerExample.swift */,
 				17B3FA512B50628200DD716B /* Assets.xcassets */,
 				17B3FA532B50628200DD716B /* Preview Content */,
@@ -104,6 +109,7 @@
 			name = iOSAudioSamplers;
 			packageProductDependencies = (
 				17B3FA5E2B50630E00DD716B /* AudioKit */,
+				1729AEFF2B507F2C0057F2DA /* DunneAudioKit */,
 			);
 			productName = iOSAudioSamplers;
 			productReference = 17B3FA4A2B50628000DD716B /* iOSAudioSamplers.app */;
@@ -135,6 +141,7 @@
 			mainGroup = 17B3FA412B50628000DD716B;
 			packageReferences = (
 				17B3FA5D2B50630D00DD716B /* XCRemoteSwiftPackageReference "AudioKit" */,
+				1729AEFE2B507F2C0057F2DA /* XCRemoteSwiftPackageReference "DunneAudioKit" */,
 			);
 			productRefGroup = 17B3FA4B2B50628000DD716B /* Products */;
 			projectDirPath = "";
@@ -163,6 +170,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1729AF022B50820A0057F2DA /* AudioKitDunneSamplerExample.swift in Sources */,
 				17B3FA5C2B5062B000DD716B /* AudioKitAppleSamplerExample.swift in Sources */,
 				17B3FA502B50628000DD716B /* ContentView.swift in Sources */,
 				17B3FA4E2B50628000DD716B /* iOSAudioSamplersApp.swift in Sources */,
@@ -374,6 +382,14 @@
 /* End XCConfigurationList section */
 
 /* Begin XCRemoteSwiftPackageReference section */
+		1729AEFE2B507F2C0057F2DA /* XCRemoteSwiftPackageReference "DunneAudioKit" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/AudioKit/DunneAudioKit.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 5.6.1;
+			};
+		};
 		17B3FA5D2B50630D00DD716B /* XCRemoteSwiftPackageReference "AudioKit" */ = {
 			isa = XCRemoteSwiftPackageReference;
 			repositoryURL = "https://github.com/AudioKit/AudioKit.git";
@@ -385,6 +401,11 @@
 /* End XCRemoteSwiftPackageReference section */
 
 /* Begin XCSwiftPackageProductDependency section */
+		1729AEFF2B507F2C0057F2DA /* DunneAudioKit */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 1729AEFE2B507F2C0057F2DA /* XCRemoteSwiftPackageReference "DunneAudioKit" */;
+			productName = DunneAudioKit;
+		};
 		17B3FA5E2B50630E00DD716B /* AudioKit */ = {
 			isa = XCSwiftPackageProductDependency;
 			package = 17B3FA5D2B50630D00DD716B /* XCRemoteSwiftPackageReference "AudioKit" */;

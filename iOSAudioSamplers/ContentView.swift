@@ -10,30 +10,18 @@ import SwiftUI
 let CMajor: [UInt8] = [60, 64, 67]
 
 struct ContentView: View {
-    private let audioKitAppleSampler = AudioKitAppleSamplerExample()
     private let avAudioUnitSampler = AVAudioUnitSamplerExample()
+    private let audioKitAppleSampler = AudioKitAppleSamplerExample()
+    private let audioKitDunneSampler = AudioKitDunneSamplerExample()
     
     init() {
-        audioKitAppleSampler.startEngine()
         avAudioUnitSampler.setup()
+        audioKitAppleSampler.setup()
+        audioKitDunneSampler.setup()
     }
     
     var body: some View {
         VStack {
-            ChordButton(
-                label: "C Major - AudioKit",
-                color: .cyan,
-                onPress: {
-                    for note in CMajor {
-                        audioKitAppleSampler.noteOn(note: note)
-                    }
-                },
-                onUnpress: {
-                    for note in CMajor {
-                        audioKitAppleSampler.noteOff(note: note)
-                    }
-                })
-            
             ChordButton(
                 label: "C Major - AVAudioUnit",
                 color: .orange,
@@ -48,6 +36,33 @@ struct ContentView: View {
                     }
                 })
             
+            ChordButton(
+                label: "C Major - AudioKitAppleSampler",
+                color: .cyan,
+                onPress: {
+                    for note in CMajor {
+                        audioKitAppleSampler.noteOn(note: note)
+                    }
+                },
+                onUnpress: {
+                    for note in CMajor {
+                        audioKitAppleSampler.noteOff(note: note)
+                    }
+                })
+            
+            ChordButton(
+                label: "C Major - AudioKitDunneSampler",
+                color: .yellow,
+                onPress: {
+                    for note in CMajor {
+                        audioKitDunneSampler.noteOn(note: note)
+                    }
+                },
+                onUnpress: {
+                    for note in CMajor {
+                        audioKitDunneSampler.noteOff(note: note)
+                    }
+                })
         }
         .padding()
     }
