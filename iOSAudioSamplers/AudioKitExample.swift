@@ -20,10 +20,10 @@ class AudioKitSamplerExample {
             if let fileURL = Bundle.main.url(forResource: "Keyboards", withExtension: "sf2") {
                 try instrument.loadInstrument(url: fileURL)
             } else {
-                Log("Could not find soundfont file")
+                Log("AudioKitSampler: Could not find soundfont file")
             }
         } catch {
-            Log("Could not load instrument")
+            Log("AudioKitSampler: Could not load instrument")
         }
     }
     
@@ -31,7 +31,7 @@ class AudioKitSamplerExample {
         do {
             try engine.start()
         } catch {
-            Log("Could not start audio engine")
+            Log("AudioKitSampler: Could not start audio engine")
         }
     }
     
