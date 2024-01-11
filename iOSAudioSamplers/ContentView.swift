@@ -10,11 +10,11 @@ import SwiftUI
 let CMajor: [UInt8] = [60, 64, 67]
 
 struct ContentView: View {
-    private let audioKitSampler = AudioKitSamplerExample()
+    private let audioKitAppleSampler = AudioKitAppleSamplerExample()
     private let avAudioUnitSampler = AVAudioUnitSamplerExample()
     
     init() {
-        audioKitSampler.startEngine()
+        audioKitAppleSampler.startEngine()
         avAudioUnitSampler.setup()
     }
     
@@ -25,12 +25,12 @@ struct ContentView: View {
                 color: .cyan,
                 onPress: {
                     for note in CMajor {
-                        audioKitSampler.noteOn(note: note)
+                        audioKitAppleSampler.noteOn(note: note)
                     }
                 },
                 onUnpress: {
                     for note in CMajor {
-                        audioKitSampler.noteOff(note: note)
+                        audioKitAppleSampler.noteOff(note: note)
                     }
                 })
             

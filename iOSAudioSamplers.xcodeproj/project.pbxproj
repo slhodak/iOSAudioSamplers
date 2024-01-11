@@ -11,7 +11,7 @@
 		17B3FA502B50628000DD716B /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 17B3FA4F2B50628000DD716B /* ContentView.swift */; };
 		17B3FA522B50628200DD716B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 17B3FA512B50628200DD716B /* Assets.xcassets */; };
 		17B3FA552B50628200DD716B /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 17B3FA542B50628200DD716B /* Preview Assets.xcassets */; };
-		17B3FA5C2B5062B000DD716B /* AudioKitExample.swift in Sources */ = {isa = PBXBuildFile; fileRef = 17B3FA5B2B5062B000DD716B /* AudioKitExample.swift */; };
+		17B3FA5C2B5062B000DD716B /* AudioKitAppleSamplerExample.swift in Sources */ = {isa = PBXBuildFile; fileRef = 17B3FA5B2B5062B000DD716B /* AudioKitAppleSamplerExample.swift */; };
 		17B3FA5F2B50630E00DD716B /* AudioKit in Frameworks */ = {isa = PBXBuildFile; productRef = 17B3FA5E2B50630E00DD716B /* AudioKit */; };
 		17B3FA622B50698200DD716B /* Keyboards.sf2 in Resources */ = {isa = PBXBuildFile; fileRef = 17B3FA612B50698200DD716B /* Keyboards.sf2 */; };
 		17B3FA642B506DC800DD716B /* AVAudioUnitSamplerExample.swift in Sources */ = {isa = PBXBuildFile; fileRef = 17B3FA632B506DC800DD716B /* AVAudioUnitSamplerExample.swift */; };
@@ -23,7 +23,7 @@
 		17B3FA4F2B50628000DD716B /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		17B3FA512B50628200DD716B /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		17B3FA542B50628200DD716B /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
-		17B3FA5B2B5062B000DD716B /* AudioKitExample.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AudioKitExample.swift; sourceTree = "<group>"; };
+		17B3FA5B2B5062B000DD716B /* AudioKitAppleSamplerExample.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AudioKitAppleSamplerExample.swift; sourceTree = "<group>"; };
 		17B3FA612B50698200DD716B /* Keyboards.sf2 */ = {isa = PBXFileReference; lastKnownFileType = file; path = Keyboards.sf2; sourceTree = "<group>"; };
 		17B3FA632B506DC800DD716B /* AVAudioUnitSamplerExample.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AVAudioUnitSamplerExample.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -62,7 +62,7 @@
 			children = (
 				17B3FA4D2B50628000DD716B /* iOSAudioSamplersApp.swift */,
 				17B3FA4F2B50628000DD716B /* ContentView.swift */,
-				17B3FA5B2B5062B000DD716B /* AudioKitExample.swift */,
+				17B3FA5B2B5062B000DD716B /* AudioKitAppleSamplerExample.swift */,
 				17B3FA632B506DC800DD716B /* AVAudioUnitSamplerExample.swift */,
 				17B3FA512B50628200DD716B /* Assets.xcassets */,
 				17B3FA532B50628200DD716B /* Preview Content */,
@@ -163,7 +163,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				17B3FA5C2B5062B000DD716B /* AudioKitExample.swift in Sources */,
+				17B3FA5C2B5062B000DD716B /* AudioKitAppleSamplerExample.swift in Sources */,
 				17B3FA502B50628000DD716B /* ContentView.swift in Sources */,
 				17B3FA4E2B50628000DD716B /* iOSAudioSamplersApp.swift in Sources */,
 				17B3FA642B506DC800DD716B /* AVAudioUnitSamplerExample.swift in Sources */,

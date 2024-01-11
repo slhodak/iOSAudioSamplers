@@ -9,7 +9,7 @@ import Foundation
 import AudioKit
 
 
-class AudioKitSamplerExample {
+class AudioKitAppleSamplerExample {
     let engine = AudioEngine()
     var instrument = AppleSampler()
     
