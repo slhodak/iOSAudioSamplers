@@ -9,6 +9,7 @@
 /* Begin PBXBuildFile section */
 		1729AF002B507F2C0057F2DA /* DunneAudioKit in Frameworks */ = {isa = PBXBuildFile; productRef = 1729AEFF2B507F2C0057F2DA /* DunneAudioKit */; };
 		1729AF022B50820A0057F2DA /* AudioKitDunneSamplerExample.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1729AF012B50820A0057F2DA /* AudioKitDunneSamplerExample.swift */; };
+		1729AF042B5087FF0057F2DA /* ChordButtonView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1729AF032B5087FF0057F2DA /* ChordButtonView.swift */; };
 		17B3FA4E2B50628000DD716B /* iOSAudioSamplersApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 17B3FA4D2B50628000DD716B /* iOSAudioSamplersApp.swift */; };
 		17B3FA502B50628000DD716B /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 17B3FA4F2B50628000DD716B /* ContentView.swift */; };
 		17B3FA522B50628200DD716B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 17B3FA512B50628200DD716B /* Assets.xcassets */; };
@@ -21,6 +22,7 @@
 
 /* Begin PBXFileReference section */
 		1729AF012B50820A0057F2DA /* AudioKitDunneSamplerExample.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AudioKitDunneSamplerExample.swift; sourceTree = "<group>"; };
+		1729AF032B5087FF0057F2DA /* ChordButtonView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = ChordButtonView.swift; path = iOSAudioSamplers/Views/ChordButtonView.swift; sourceTree = SOURCE_ROOT; };
 		17B3FA4A2B50628000DD716B /* iOSAudioSamplers.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = iOSAudioSamplers.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		17B3FA4D2B50628000DD716B /* iOSAudioSamplersApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = iOSAudioSamplersApp.swift; sourceTree = "<group>"; };
 		17B3FA4F2B50628000DD716B /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -44,6 +46,25 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		1729AF052B5088040057F2DA /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				17B3FA4F2B50628000DD716B /* ContentView.swift */,
+				1729AF032B5087FF0057F2DA /* ChordButtonView.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		1729AF062B50881B0057F2DA /* Samplers */ = {
+			isa = PBXGroup;
+			children = (
+				17B3FA5B2B5062B000DD716B /* AudioKitAppleSamplerExample.swift */,
+				1729AF012B50820A0057F2DA /* AudioKitDunneSamplerExample.swift */,
+				17B3FA632B506DC800DD716B /* AVAudioUnitSamplerExample.swift */,
+			);
+			path = Samplers;
+			sourceTree = "<group>";
+		};
 		17B3FA412B50628000DD716B = {
 			isa = PBXGroup;
 			children = (
@@ -65,10 +86,8 @@
 			isa = PBXGroup;
 			children = (
 				17B3FA4D2B50628000DD716B /* iOSAudioSamplersApp.swift */,
-				17B3FA4F2B50628000DD716B /* ContentView.swift */,
-				17B3FA5B2B5062B000DD716B /* AudioKitAppleSamplerExample.swift */,
-				1729AF012B50820A0057F2DA /* AudioKitDunneSamplerExample.swift */,
-				17B3FA632B506DC800DD716B /* AVAudioUnitSamplerExample.swift */,
+				1729AF062B50881B0057F2DA /* Samplers */,
+				1729AF052B5088040057F2DA /* Views */,
 				17B3FA512B50628200DD716B /* Assets.xcassets */,
 				17B3FA532B50628200DD716B /* Preview Content */,
 			);
@@ -175,6 +194,7 @@
 				17B3FA502B50628000DD716B /* ContentView.swift in Sources */,
 				17B3FA4E2B50628000DD716B /* iOSAudioSamplersApp.swift in Sources */,
 				17B3FA642B506DC800DD716B /* AVAudioUnitSamplerExample.swift in Sources */,
+				1729AF042B5087FF0057F2DA /* ChordButtonView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
