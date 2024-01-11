@@ -7,5 +7,5 @@ This repository aims to provide a few hello-worlds for sampled audio production 
 1. AudioKit AppleSampler ([Documentation](https://www.audiokit.io/AudioKit/documentation/audiokit/applesampler))
 2. AVAudioUnitSampler ([Documentation](https://developer.apple.com/documentation/avfaudio/avaudiounitsampler))
 
-More useful documentation on Apple's AVAudioUnitSampler by AudioKit: (Site)[https://www.audiokit.io/AudioKit/documentation/audiokit/samplers]
+More useful documentation on Apple's AVAudioUnitSampler by AudioKit: [Site](https://www.audiokit.io/AudioKit/documentation/audiokit/samplers)
 
