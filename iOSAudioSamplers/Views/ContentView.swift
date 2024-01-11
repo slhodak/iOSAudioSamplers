@@ -7,7 +7,7 @@
 
 import SwiftUI
 
-let CMajor: [UInt8] = [60, 64, 67]
+let CMajor: [UInt8] = [48, 55, 60, 64]
 
 struct ContentView: View {
     private let avAudioUnitSampler = AVAudioUnitSamplerExample()
@@ -17,7 +17,7 @@ struct ContentView: View {
     init() {
         avAudioUnitSampler.setup()
         audioKitAppleSampler.setup()
-        audioKitDunneSampler.setup()
+//        audioKitDunneSampler.setup()
     }
     
     var body: some View {
@@ -52,7 +52,7 @@ struct ContentView: View {
             
             ChordButton(
                 label: "C Major - AudioKitDunneSampler",
-                color: .yellow,
+                color: .gray,
                 onPress: {
                     for note in CMajor {
                         audioKitDunneSampler.noteOn(note: note)
@@ -63,6 +63,7 @@ struct ContentView: View {
                         audioKitDunneSampler.noteOff(note: note)
                     }
                 })
+                .disabled(true)
         }
         .padding()
     }

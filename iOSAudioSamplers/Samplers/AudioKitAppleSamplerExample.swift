@@ -10,8 +10,8 @@ import AudioKit
 
 
 class AudioKitAppleSamplerExample {
-    let engine = AudioEngine()
-    var instrument = AppleSampler()
+    private let engine = AudioEngine()
+    private let sampler = AppleSampler()
     
     func setup() {
         setupAudioEngine()
@@ -20,7 +20,7 @@ class AudioKitAppleSamplerExample {
     
     func setupAudioEngine() {
         do {
-            engine.output = instrument
+            engine.output = sampler
             try engine.start()
         } catch {
             Log("AudioKitAppleSampler: Could not start audio engine")
@@ -30,7 +30,7 @@ class AudioKitAppleSamplerExample {
     func loadSoundFont() {
         do {
             if let fileURL = Bundle.main.url(forResource: "Keyboards", withExtension: "sf2") {
-                try instrument.loadInstrument(url: fileURL)
+                try sampler.loadInstrument(url: fileURL)
             } else {
                 Log("AudioKitAppleSampler: Could not find soundfont file")
             }
@@ -40,10 +40,10 @@ class AudioKitAppleSamplerExample {
     }
     
     func noteOn(note: UInt8) {
-        instrument.play(noteNumber: MIDINoteNumber(note), velocity: 90, channel: 0)
+        sampler.play(noteNumber: MIDINoteNumber(note), velocity: 90, channel: 0)
     }
     
     func noteOff(note: UInt8) {
-        instrument.stop(noteNumber: MIDINoteNumber(note), channel: 0)
+        sampler.stop(noteNumber: MIDINoteNumber(note), channel: 0)
     }
 }

@@ -11,8 +11,8 @@ import DunneAudioKit
 
 
 class AudioKitDunneSamplerExample {
-    let engine = AudioEngine()
-    let sampler = Sampler()
+    private let engine = AudioEngine()
+    private let sampler = Sampler()
     
     func setup() {
         setupAudioEngine()
